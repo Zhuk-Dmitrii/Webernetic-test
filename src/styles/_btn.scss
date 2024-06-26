@@ -1,0 +1,78 @@
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background: inherit;
+}
+
+// кнопка предосмотра
+.btn__demo {
+  max-width: 341px;
+  height: 68px;
+  border-radius: 60px;
+  padding: 12px 12px 12px 24px;
+  background: $royal-blue;
+  color: $white;
+
+  @media (max-width: 768px) {
+    max-width: 261px;
+    height: 56px;
+    padding: 10px 10px 10px 18px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 540px) {
+    max-width: 100%;
+  }
+
+  & .btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: $white;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+      width: 36px;
+      height: 36px;
+      padding: 6px;
+    }
+  }
+}
+
+// кнопка закрытия модального окна
+.btn__modal_close {
+  width: 52px;
+  height: 52px;
+  margin-left: auto;
+  margin-bottom: 4px;
+  padding: 14px;
+  border-radius: 10px;
+  background: $white;
+}
+
+.btn__sign-in {
+  height: 65px;
+  padding: 18px 12px;
+  border-radius: 4px;
+  background: $royal-blue;
+  color: $white;
+  line-height: 160%;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.btn__sign-up {
+  height: 65px;
+  padding: 18px 12px;
+  border-radius: 4px;
+  border: 1px solid $royal-blue;
+  color: $royal-blue;
+  line-height: 160%;
+  justify-content: center;
+}

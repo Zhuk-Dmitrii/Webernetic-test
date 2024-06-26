@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main {
+  max-width: 578px;
+  padding: 0 27px 0 40px;
+
+  @media (max-width: 1140px) {
+    max-width: 100%;
+    padding: 24px;
+  }
+
+  @media (max-width: 540px) {
+    padding-bottom: 18px;
+  }
+}
+
+.container__sign-in {
+  width: 100%;
+}
