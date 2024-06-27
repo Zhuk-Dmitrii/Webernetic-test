@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Webernetic-test/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webernetic test</title>
+  <script type="module" crossorigin src="/Webernetic-test/assets/index-BvFA5OCS.js"></script>
+  <link rel="stylesheet" crossorigin href="/Webernetic-test/assets/index-5371LJl-.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- страница "демо версии" -->
+    <section class="main">
+      <div class="container container__main">
+        <h3 class="title">Демо-версия</h3>
+        <p class="description">
+          За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
+          средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
+        </p>
+        <button id="btn-demo" class="btn btn__demo">
+          Попробовать бесплатно
+          <div class="btn__icon">
+            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7%207H17V17'%20stroke='%231F4284'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M7%2017L17%207'%20stroke='%231F4284'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="arrow">
+          </div>
+        </button>
+      </div>
+      <div class="baner">
+        <img src="/Webernetic-test/assets/baner-Cbt0Tpvo.jpg" alt="baner">
+      </div>
+    </section>
+  </div>
+
+  <!-- модальное окно аутентификации -->
+  <section id="modal-auth" class="modal">
+    <div class="modal__sign-in">
+      <div class="container container__sign-in">
+        <button id="btn-close-modal" class="btn btn__modal_close">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M18%206L6%2018'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M6%206L18%2018'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="close">
+        </button>
+        <h3 class="modal__title">
+          Войти в систему
+        </h3>
+        <form id="form-sign-in" action="#" class="form__sign-in">
+          <input id="login-sign-in" class="form__input" type="text" placeholder="Email/Телефон" required>
+          <input id="password-sign-in" class="form__input" type="password" placeholder="Пароль" required>
+          <div class="form__remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Запомнить пароль</label>
+          </div>
+          <a href="#" class="form__restore">Востановить</a>
+          <button class="btn btn__sign-in" type="submit">Войти</button>
+          <button class="btn btn__sign-up" type="button">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
