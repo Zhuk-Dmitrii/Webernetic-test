@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 
 .modal__sign-in {
@@ -19,6 +22,19 @@
   border-radius: 20px;
   background: $alice-blue;
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.7);
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.open .modal__sign-in {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
 }
 
 .modal__title {
@@ -69,6 +85,7 @@
 }
 
 .form__restore {
+  width: max-content;
   font-size: 20px;
   color: $royal-blue;
   margin-bottom: 36px;

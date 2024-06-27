@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Webernetic test</title>
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/scripts/main.ts"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
           За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
           средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
         </p>
-        <button class="btn btn__demo">
+        <button id="btn-demo" class="btn btn__demo">
           Попробовать бесплатно
           <div class="btn__icon">
             <img src="src/images/icon/arrow-up-right.svg" alt="arrow">
@@ -33,19 +33,18 @@
   </div>
 
   <!-- модальное окно аутентификации -->
-  <section class="modal">
+  <section id="modal-auth" class="modal">
     <div class="modal__sign-in">
       <div class="container container__sign-in">
-        <button class="btn btn__modal_close">
+        <button id="btn-close-modal" class="btn btn__modal_close">
           <img src="src/images/icon/close.svg" alt="close">
         </button>
         <h3 class="modal__title">
           Войти в систему
         </h3>
-        <form action="#" class="form__sign-in">
-          <input class="form__input" type="text" placeholder="Email/Телефон" required>
-          <input class="form__input" type="password" placeholder="Пароль" required>
-          <input class="form__input" type="password" placeholder="Пароль" required>
+        <form id="form-sign-in" action="#" class="form__sign-in">
+          <input id="login-sign-in" class="form__input" type="text" placeholder="Email/Телефон" required>
+          <input id="password-sign-in" class="form__input" type="password" placeholder="Пароль" required>
           <div class="form__remember">
             <input type="checkbox" id="remember">
             <label for="remember">Запомнить пароль</label>
